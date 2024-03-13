@@ -3,6 +3,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+# Extract dependencies from requirements.txt
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 
@@ -11,17 +12,17 @@ setuptools.setup(
     version="3.0.3",
     author="CodePerfectPlus",
     author_email="deepak008@live.com",
-    description="Listen to your favourite audiobook",
+    description="Listen to your favorite audiobook",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=required,
+    install_requires=required,  # Using install_requires for dependency management
     url="https://github.com/Py-Contributors/audiobook",
     keywords="audiobook",
     packages=setuptools.find_packages(),
-    project_urls= {
+    project_urls={
         "Documentation": "https://pycontributors.readthedocs.io/projects/Audiobook/en/latest/",
         "Source": "https://github.com/Py-Contributors/AudioBook",
-        "Tracker": "https://github.com/Py-Contributors/AudioBook/issues"
+        "Issue Tracker": "https://github.com/Py-Contributors/AudioBook/issues"
     },
     classifiers=[
         "Development Status :: 5 - Production/Stable",
